@@ -20,9 +20,8 @@ const ICMP_HEADER_LEN: usize = 8;
 const IPV4_HEADER_LEN: usize = 20;
 
 
-/// Simple program to greet a person
 #[derive(Parser, Debug)]
-#[command(author, version, about, long_about = None)]
+#[command(author, version, about)]
 struct Args {
     /// Name of the wireguard interface
     #[arg(short, long)]
